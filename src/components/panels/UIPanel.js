@@ -1,8 +1,8 @@
 import React from 'react';
 
-const UIPanel = ({ onFileUpload }) => {
+const UIPanel = ({ onFileUpload, style }) => {
     return (
-        <div style={panelStyle}>
+        <div style={{ ...panelStyle, ...style }}>
             <h3 style={titleStyle}>Control Panel</h3>
             <input
                 type="file"
